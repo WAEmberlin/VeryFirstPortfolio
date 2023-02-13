@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Austin's Portfolio Website Final Project</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="script.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body onload="javascript:getName()">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md bg-light navbar-light" sticky-top>
+	<div class="container-fluid">
+		<a class="navbar-brand" href="index.html"><img src="images/ecd-logo.jpeg" width="275" height="80"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+	<ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="index.html">Portfolio Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="toyota.html">Toyota Website</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="gis.html">GIS Project</a>
+		</li>
+    <li class="nav-item">
+			<a class="nav-link" href="2022.html">2022 Projects</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link active" href="about.html">About Me</a>
+		</li>
+	</ul>
+	</div>
+</div>
+</nav>
+  
+<!-- Top Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+  <hr>  
+  <div>
+    <form>
+      <h4 id="name" style="text-align:center;"></h4>
+      <h4>Enter your current city and state then click "Submit", please.</h4>
+        <label for="city">City:</label>
+          <input type="text" id="city" onkeyup="countCharacters(city, 'cityCharacterCount', 30);"><br>
+            <span id="cityCharacterCount" class="characterLimit">0 characters</span><br>
+        <label for="state">State:</label>
+          <input type="text" id="state" onkeyup="countCharacters(state, 'stateCharacterCount', 30);"><br>
+            <span id="stateCharacterCount" class="characterLimit">0 characters</span><br><br>
+        <button type="button" onclick="displayLocation()">Submit</button>
+    </form>
+  </div> 
+    <br><hr>
+	<div class="col-12">
+    <img src="images/austin.jpg" alt="A picture of Austin" id="photo" width="400" height="400" onmouseover="photoChange()">
+      <hr>
+    <h1 class="display-4 fontM">Wesley "Austin" Emberlin</h1>
+	</div>
+	<hr>
+	<div class="col-12">
+	  <p class="lead">Hello there and welcome to my portfolio website. My name is Austin Emberlin and I currently attend Kansas State University. I am working towards obtaining an associate of science degree in Website Development Technology and a bachelor of science degree in Engineering Technology - Machine Learning and Autonomous Systems. I plan to one day be a Machine Learning Engineer and to obtain a masters degree in Integrated Systems Designs and Dynamics - Machine Learning and Autonomus Systems. I am currently a full-time data analyst for Brink's. My main hobby is homebrewing delicious craft beer. Below you will find my resume.</p>
+	</div>
+</div>
+</div>
+  
+<!-- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<embed src="files/Resume.pdf" type="application/pdf" width="100%" height="600px" />
+	</div>
+</div>
+
+<!-- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+		<h2>Connect</h2>
+	</div>
+	<div class="col-12 social padding">
+		<a href="https://www.facebook.com/austin.emberlin/"><i class="fab fa-facebook"></i></a>
+		<a href="https://www.linkedin.com/in/wesley-emberlin-1938939b/"><i class="fab fa-linkedin-in"></i></a>
+		<a href="https://www.instagram.com/wemberlin/?hl=en"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.youtube.com/channel/UCnTxk75J4BTvQQ7-UuFiTlg"><i class="fab fa-youtube"></i></a>
+	</div>
+</div>
+</div>
+
+
+<!-- Footer -->
+<footer>
+  <p class="text-center">&copy;2022 Austin Emberlin - Kansas State University - Salina Aerospace and Technology</p>
+</footer>
+</body>
+</html>

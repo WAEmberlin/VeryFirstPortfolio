@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Austin's Portfolio Website Final Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxdb/11.3.0/rxdb.browserify.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md bg-light navbar-light" sticky-top>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/ecd-logo.jpeg" width="275" height="80"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Portfolio Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="toyota.html">Toyota Website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gis.html">GIS Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="2022.html">2022 Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Top Section -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Machine Learning with ML5.js</h1>
+      </div>
+      <hr>
+      <div class="col-12">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/pMDZFuUcFeo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Three Column Section -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-industry" aria-hidden="true"></i>
+        <h3>McDonalds App Redesign</h3>
+        <img src="images/Mcd_App.PNG" class="img-fluid">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="far fa-address-card"></i>
+        <h3>Movie Poster Redesign</h3>
+        <img src="images/twister.jpg" class="img-fluid">
+        <p><br>I always enjoyed watching the movie Twister and other things weather related.
+          Creating a new Twister movie poster was tough because the original was so good.
+          The poster is split into three different parts with a very fitting quote and images.
+        </p>
+        <hr>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fa fa-car"></i>
+        <h3>Toyota App Design</h3>
+        <img src="images/Toyota-App-Final.png" class="img-fluid">
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+
+  <!-- Fixed background -->
+  <figure>
+    <div class="fixed-wrap">
+      <div class="fixed">
+      </div>
+    </div>
+  </figure>
+  <hr class="my-4">
+
+  <!-- Models -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Back in the Sailor days.</h1>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Navy Video -->
+  <div class="container-fluid padding">
+    <h3 class="heading3">Live Fire Drill with 76mm cannon and CIWS.</h3>
+    <div>
+      <p class="paragraph1">USS Halyburton FFG 40. Filmed in Spring 2012 by Electronic Warfare Technician Third Class
+        (SW) Austin Emberlin.</p>
+    </div>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/iv44dh9KxoQ" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <hr>
+  </div>
+
+  <!-- Connect -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-12">
+        <h2>Connect</h2>
+      </div>
+      <div class="col-12 social padding">
+        <a href="https://www.facebook.com/austin.emberlin/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/wesley-emberlin-1938939b/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/wemberlin/?hl=en"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCnTxk75J4BTvQQ7-UuFiTlg"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p class="text-center">&copy;2022 Austin Emberlin - Kansas State University - Salina Aerospace and Technology</p>
+  </footer>
+</body>
+
+</html>
